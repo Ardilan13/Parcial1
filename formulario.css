@@ -1,0 +1,29 @@
+.todo{
+	background-color: lightgrey;
+	width: 300px;
+	text-align: center;
+	margin: 100px;
+	border-radius: 10px;
+}
+.ficha{
+	border-radius: 5px;
+	background-color: skyblue;
+	color: white;
+	display: block;
+}
+.cajas{
+	border: 1px solid grey;
+	border-radius: ;
+}
+label{
+	color: blue;
+}
+#email , #telefono{
+	color: blue;
+}
+#gusto{
+	color: green;
+}
+#porcentaje{
+	color: red;
+}

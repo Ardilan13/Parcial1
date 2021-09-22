@@ -1,6 +1,4 @@
-* {
-	font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-}
+
 body {
 	background-color: #e8ecef;
 }
@@ -38,13 +36,27 @@ body {
 	border-style: solid;
 }
 
-input {
+input{
+	width: 70px;
+	border: hidden;
+	margin: 0px;
+}
+
+.entrada {
 	padding-left: 10px;
 	width: 350px;
 	height: 35px;
 	border: hidden;
 	border-radius: 8px;
 	border-color: #aaebf3;
+}
+
+button{
+	background-color: white;
+	color: blue;
+	border: none;
+	cursor: pointer;
+	display: inline-block;
 }
 
 #agregar{
@@ -58,11 +70,19 @@ input {
 	color: #8db594;
 	border-style: solid;
 	border-width: 2px;
+	display: inline-block;
+}
+
+#agregar:hover{
+	background-color: #8db594;
+	color: #fffffe;
+	border-color: #fffffe;
 }
 
 #tablafull{
 	border: 1px solid #e2e2e2;
 	border-radius: 5px;
+	margin: 20px;
 }
 
 .bandera{
@@ -83,9 +103,37 @@ input {
 	border-collapse: collapse;
 	padding: 10px;
 	padding-left: 0px;
+	max-width: 120px;
+}
+
+.label{
+	display: inline-block;
+	margin: 20px;
+}
+
+#aceptar{
+	border: 1px solid #e2e2e2;
+	border-radius: 5px;
+	color: grey;
+	width: 100px;
+	height: 30px;
+	margin: 20px;
+}
+
+#cancelar{
+	border: 1px solid red;
+	border-radius: 5px;
+	color: red;
+	width: 100px;
+	height: 30px;
 }
 
 a{
 	margin-top: 50px;
 	margin-bottom: 20px;
+	margin-left: 20px;
+}
+
+#escondido{
+	display: none;
 }

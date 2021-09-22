@@ -14,26 +14,24 @@
 	</div>
 	<div class="contenedor">
 		<label>formulario de afiliación.</label>
-		<form>
+		<form action="formulario.html" method="GET">
 			<div class="input">			
-				<input type="text" id="nombre" placeholder="Nombre completo">
+				<input type="text" name="nombre" class="entrada" id="nombre" placeholder="Nombre completo">
 				<i class="fas fa-user"></i>
 			</div>
 			<div class="input">
-				<input type="text" id="email" placeholder="Email">
+				<input type="text" name="email" class="entrada" id="email" placeholder="Email">
 				<i class="fas fa-envelope"></i>
 			</div>
 			<div class="input">
-				<input type="text" id="telefono" placeholder="Telefono">
+				<input type="text" name="telefono" class="entrada" id="telefono" placeholder="Telefono">
 				<i class="fas fa-phone-alt"></i>
 			</div>
 			<div class="input">
-  				<input type="text" name="gusto "id="gusto">
-  				<button type="button" onclick="AgregarDato()" id="agregar">Gustos</button>
+  				<input type="text" class="entrada" id="gusto">
+  				<button type="button" onclick="AgregarDato()"id="agregar">Gustos</button>
 			</div>
-			
-		</form>
-		<table id="tablafull">
+			<table id="tablafull">
 			<tr>
 				<th class="bandera">
 						<i class="far fa-flag"></i>
@@ -49,7 +47,16 @@
 				</th>
 			</tr>
 		</table>
-		<a href="">Ir a Site de P web</a>
+		<div id="escondido">
+		<label id="label">pulse Aceptar para guardar los cambios o Cancelar para borrarlos</label>
+		<div>
+			<button type="submit" id="aceptar">Aceptar</button>
+			<button type="reset" onclick="location.reload()" id="cancelar">Cancelar</button>
+		</div>
+		<a href="https://sites.google.com/view/dweb1-uis/contenido?authuser=0">Ir a Site de P web</a>
+		</div>
+		</form>
+		
 	</div>
 </body>
 </html>
